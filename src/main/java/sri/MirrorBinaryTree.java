@@ -36,16 +36,17 @@ public class MirrorBinaryTree {
 
 	public static void main(String[] args) {
 		new MirrorBinaryTree().start();
-
 	}
 
 	private  void start() {
+		//TODO: read mirrored tree instead of hardcoding
 		tree = new Node(10);
 		insertLeft(tree, 20);
 		insertLeft(tree, 40);
 		insertRight(tree, 30);
 		
 		tree = mirrorTree(tree);
+		//TODO: Print mirrored tree
 		System.out.println("Test");
 	}
 
