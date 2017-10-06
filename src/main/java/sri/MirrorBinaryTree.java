@@ -6,7 +6,7 @@ public class MirrorBinaryTree {
 		Node left,right;
 		
 		Node(int item){
-			this.data = item;
+			data = item;
 			left=null;
 			right=null;
 		}
