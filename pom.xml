@@ -3,5 +3,25 @@
   <groupId>abhyasa</groupId>
   <artifactId>abhyasa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Abhyasa</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations-java5</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <name>Abhyasa</name>
 </project>
