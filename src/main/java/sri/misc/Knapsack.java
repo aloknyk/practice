@@ -1,7 +1,6 @@
 package sri.misc;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -87,13 +86,8 @@ public class Knapsack {
 		for(int i=0;i<inputSize;i++){
 			items.add(k.new Item(values[i], weights[i]));
 		}
-		
-		items.sort(new Comparator<Item>() {
-			@Override
-			public int compare(Item o1, Item o2) {
-				return o1.compareTo(o2);
-			}
-		});
+
+        items.sort((o1, o2) -> o1.compareTo(o2));
 		List<Integer> baggedItems = new ArrayList<>();
 		int leftCapacity = capacity;
 		for(Item i : items){
