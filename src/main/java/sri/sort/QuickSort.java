@@ -1,12 +1,9 @@
 package sri.sort;
 
-import org.jetbrains.annotations.NonNls;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
+import com.sun.istack.internal.NotNull;
+
 import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
 
 public class QuickSort {
     public void  sort(int [] unsorted) {
@@ -42,10 +39,4 @@ public class QuickSort {
         return i+1;
     }
 
-
-    private void swap(int x,int y) {
-        int temp = x;
-        x = y;
-        y = temp;
-    }
 }
